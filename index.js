@@ -8,17 +8,17 @@
 //Se XP for maior ou igual a 10.001 = Radiante
 let heroi =["Hercules", 7000]
 
+nivelHeroi()
 
-for (nivelHeroi in heroi){
-    console.log("O Herói de nome " +  heroi[0] + " está no nível de " + nivelHeroi)
-
+function nivelHeroi(){
+   
 
 if (heroi[1] < 1000) {
     return nivelHeroi = "ferro";
 
 }
 else if (heroi[1] === 1001 || 2000){
-    return nivelHeroi = "brnze";
+    return nivelHeroi = "bronze";
 }
 else if (heroi[1] === 6001 || 7000){
     return nivelHeroi = "ouro";
@@ -38,5 +38,7 @@ else if (heroi[1] === 9001 || 10000) {
 else if (heroi[1] >= 10001) {
    return nivelHeroi = "radiante"
 }
+
 }
 
+console.log("O Herói de nome " +  heroi[0] + " está no nível de " + nivelHeroi)
